@@ -1,0 +1,14 @@
+version: 0.2
+
+env:
+  parameter-store:
+    GITHUB_TOKEN: GITHUB_TOKEN 
+phases:
+  install:
+    commands:
+      - export REPO="${repository_name}"
+      - export TERRAFORM_WORKSPACE="${tf_workspace}"
+      - . ./buildspecs/buildspec-terraform.sh
+  post_build:
+    commands:
+      - echo Deploy completed on `date`
