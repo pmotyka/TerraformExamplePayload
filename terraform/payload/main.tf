@@ -20,9 +20,8 @@ locals {
 */
 
 module "mylambda" {
-  tags = local.tags
-  # source      = "github.com/chrilebl/TerraformLambdaModule"
-  source      = "git::ssh://git.amazon.com/pkg/TerraformLambdaModule"
+  tags        = local.tags
+  source      = "github.com/cleblanc/TerraformLambdaModule"
   lambda_name = "mylambda"
   region      = "us-west-2"
 }

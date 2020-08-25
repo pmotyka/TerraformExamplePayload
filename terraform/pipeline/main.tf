@@ -13,8 +13,7 @@ locals {
 }
 
 module "pipeline" {
-  # source          = "../../../TerraformCodePipelineModule"
-  source          = "git::ssh://git.amazon.com/pkg/TerraformCodePipelineModule"
+  source          = "github.com/cleblanc/TerraformCodePipelineModule"
   tags            = local.tags
   region          = "us-west-2"
   repository_name = var.repository_name

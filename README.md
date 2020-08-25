@@ -8,3 +8,5 @@ https://code.amazon.com/packages/TerraformCodePipelineModule/trees/mainline
 
 To deploy the pipeline for this project, run `./scripts/deploy_pipeline.sh`
 This will create the pipeline, which in turn will run the terraform found in the conventionally location `terraform/payload` (according to https://code.amazon.com/packages/TerraformCodePipelineModule/trees/mainline)
+
+This deployment script is generic and can be shared across project repos via gitsubmodules or other mechanism.
