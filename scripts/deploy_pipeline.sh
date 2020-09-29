@@ -14,7 +14,7 @@ export TERRAFORM_WORKSPACE=$BRANCH
 # This is used to scipe the state bucket name (per account)
 export ACCOUNT_NAME=$(./scripts/account_name_from_branch.sh)
 # A global identifier for scoping bucket names
-export NAMESPACE="cleblanc"
+export NAMESPACE="pmotyka"
 
 echo "REPO is $REPO"
 echo "BRANCH is $BRANCH"
