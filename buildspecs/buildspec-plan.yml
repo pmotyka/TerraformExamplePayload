@@ -10,7 +10,7 @@ phases:
     commands:
       - export REPO="${repository_name}"
       - export TERRAFORM_WORKSPACE="${tf_workspace}"
-      - . ./buildspecs/buildspec-code.sh
+      - . ./buildspecs/buildspec-plan.sh
 artifacts:
   files: # globstar because almost everything we have, we need
     - '**/*'

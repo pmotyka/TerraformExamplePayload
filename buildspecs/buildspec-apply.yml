@@ -8,7 +8,7 @@ phases:
     commands:
       - export REPO="${repository_name}"
       - export TERRAFORM_WORKSPACE="${tf_workspace}"
-      - . ./buildspecs/buildspec-terraform.sh
+      - . ./buildspecs/buildspec-apply.sh
   post_build:
     commands:
       - echo Deploy completed on `date`
