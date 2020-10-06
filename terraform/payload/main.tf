@@ -21,7 +21,7 @@ locals {
 
 module "mylambda" {
   tags        = local.tags
-  source      = "https://github.com/pmotyka/TerraformLambdaModule.git"
+  source      = "git::https://github.com/pmotyka/TerraformLambdaModule.git"
   lambda_name = "mylambda"
   region      = "us-west-2"
 }
