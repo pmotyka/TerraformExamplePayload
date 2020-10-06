@@ -13,7 +13,7 @@ locals {
 }
 
 module "pipeline" {
-  source          = "git@github.com:pmotyka/TerraformCodePipelineModule.git"
+  source          = "https://github.com/pmotyka/TerraformCodePipelineModule.git"
   tags            = local.tags
   region          = "us-west-2"
   repository_name = var.repository_name
