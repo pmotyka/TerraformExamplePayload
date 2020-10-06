@@ -2,7 +2,7 @@
 set -ex
 
 export BRANCH=$TF_WORKSPACE
-export ACCOUNT_NAME=$(sh ./account_name_from_branch.sh)
+export ACCOUNT_NAME=$(sh ./scripts/account_name_from_branch.sh)
 export NAMESPACE="pmotyka"
 
 echo "machine github.com login github password $GITHUB_TOKEN" > ~/.netrc
